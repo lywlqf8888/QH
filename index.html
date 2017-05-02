@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<img src="img/hd_logo.png" id="header_logo"/>
+			<ul id="nav">
+				<li><a href="#"> 首页</a></li>
+				<li><a href="#">关于我们</a></li>
+				<li><a href="#">新闻中心</a></li>
+				<li><a href="#">产品中心</a></li>
+				<li><a href="#">旗下产业</a></li>
+				<li><a href="#">在线留言</a></li>
+				<li><a href="#">联系我们</a></li>
+			</ul>
+		</div>
+		<div id="header_tel">
+			<img id="telp" src="img/iconfont-dianhua.png" />
+			<p id="tel">咨询电话</p>
+			<p id="atel">400-8008888</p>
+		</div>
+		
+		<div id="carousel">
+		<a href="#"><img id="carousel_img" src="img/banner1.jpg"/></a>	
+		<div id="carousel_before" onclick="carousel_before()" ><a href="#"><</a></div>
+		<div id="carousel_next"  onclick="calousel_next()" ><a href="#">></a></div>
+			<ul>
+				<li><a href="#" onmousemove="carouse_li(1)">1</a></li>
+				<li><a href="#" onmousemove="carouse_li(2)">2</a></li>
+				<li><a href="#" onmousemove="carouse_li(3)">3</a></li>
+			</ul>
+			
+		</div>
+		<div id="intro">
+
+			<div  id="gsintroduce"  onmousemove="onMousemove(1)" onmouseout="onMouseout()">
+			<img   id="introduceimg" class="introduceimg" src="img/iconfont-gongsizizhi (1)1.png"/>
+				<span class="introduce1">
+				<h4 >公司简介</h4>
+				
+				<p >青海高端盐湖科技有限公司是一家大型钾肥生产企业，位于柴达木盆地东台吉乃尔盐湖，南依昆仑，北临祁连，湖区面积为300多平方公里...</p>
+				</span>
+			</div>
+			<div id="cpknoewledge" onmousemove="onMousemove(2)" onmouseout="onMouseout()">
+				<img  id="introduceimg_right" class="introduceimg" src="img/iconfont-iconfontzhishiku1.png"/>
+				<span class="introduce1">
+				<h4 >产品知识</h4>
+				
+				<p >根据中国农业科学院土壤肥料研究所，加拿大钾磷研究所，(PPI/PPIC)的联合研究所表明：中国土壤中严重缺少钾元素...</p>
+				</span>
+			</div>
+		</div>
+		
+		
+		
+     <!--   	
+<div class="pro">	
+    <div class="box_title pro_t">
+    	<h2>盐湖风光</h2>
+        <p>Saline Lake scenery</p>
+        <span></span>
+    </div>
+    
+    
+   
+    <div class="friend">
+    <div class="mr_frbox">
+        <img class="mr_frBtnL " src="img/mfrl.png"mr_frUl">
+            <ul id="mr_fu" style="background-color: red;">
+                
+                                
+                
+                <li>
+                	<a href="proshow.php?cid=6&id=44">
+                    	<img width="268" height="300" src="img/1451586450.jpg" alt="荣获诚信纳税民营企业" />
+                        <div class="bg">
+                        	<h3>荣获诚信纳税民营企业</h3>
+                            <b></b>
+                            <p>青海高端盐湖科技，2013年度格尔木市，荣获诚信纳税民...</p>
+                            <div>
+                            	MORE
+                            	<i class="t"></i>
+                                <i class="b"></i>
+                                <i class="l"></i>
+                                <i class="r"></i>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                
+                                
+                
+                <li>
+                	<a href="proshow.php?cid=6&id=43">
+                    	<img width="268" height="300" src="img/1451587925.jpg" alt="青海高端盐湖荣获十一五发展杰出贡献企业" />
+                        <div class="bg">
+                        	<h3>青海高端盐湖荣获十一五发...</h3>
+                            <b></b>
+                            <p></p>
+                            <div>
+                            	MORE
+                            	<i class="t"></i>
+                                <i class="b"></i>
+                                <i class="l"></i>
+                                <i class="r"></i>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                
+                                
+                
+                <li>
+                	<a href="proshow.php?cid=6&id=20">
+                    	<img width="268" height="300" src="img/1448682693.jpg" alt="青海盐湖风景之四" />
+                        <div class="bg">
+                        	<h3>青海盐湖风景之四</h3>
+                            <b></b>
+                            <p>青海有大大小小的盐湖100多个，其中一个大一点儿的盐湖...</p>
+                            <div>
+                            	MORE
+                            	<i class="t"></i>
+                                <i class="b"></i>
+                                <i class="l"></i>
+                                <i class="r"></i>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                
+                                
+                
+                <li>
+                	<a href="proshow.php?cid=6&id=19">
+                    	<img width="268" height="300" src="img/1448678784.jpg" alt="青海盐湖风景之三" />
+                        <div class="bg">
+                        	<h3>青海盐湖风景之三</h3>
+                            <b></b>
+                            <p>青海有大大小小的盐湖100多个，其中一个大一点儿的盐湖...</p>
+                            <div>
+                            	MORE
+                            	<i class="t"></i>
+                                <i class="b"></i>
+                                <i class="l"></i>
+                                <i class="r"></i>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                
+                                
+                
+                <li>
+                	<a href="proshow.php?cid=6&id=18">
+                    	<img width="268" height="300" src="img/1448681883.jpg" alt="青海盐湖风景之二" />
+                        <div class="bg">
+                        	<h3>青海盐湖风景之二</h3>
+                            <b></b>
+                            <p>青海有大大小小的盐湖100多个，其中一个大一点儿的盐湖...</p>
+                            <div>
+                            	MORE
+                            	<i class="t"></i>
+                                <i class="b"></i>
+                                <i class="l"></i>
+                                <i class="r"></i>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                
+                                
+                
+                <li>
+                	<a href="proshow.php?cid=6&id=17">
+                    	<img width="268" height="300" src="img/1448681479.jpg"青海盐湖风景之一" />
+                        <div class="bg">
+                        	<h3>青海盐湖风景之一</h3>
+                            <b></b>
+                            <p>青海有大大小小的盐湖100多个，其中一个大一点儿的盐湖...</p>
+                            <div>
+                            	MORE
+                            	<i class="t"></i>
+                                <i class="b"></i>
+                                <i class="l"></i>
+                                <i class="r"></i>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                
+                                
+                
+                
+               
+                
+            </ul>
+        </div>
+        <img class="mr_frBtnR next" src="img/mfrl 副本 3.png" />
+    </div>
+</div>
+       
+		
+	-->
+
+<!--
+	<script type="text/javascript">
+$(document).ready(function () {
+	
+/*图片滚动效果*/
+	$(".mr_frbox").slide({
+		titCell: "",
+		mainCell: ".mr_frUl ul",
+		autoPage: true,
+		effect: "leftLoop",
+		autoPlay: true,
+		vis: 4
+	});
+})
+</script>
+
+-->
+		
+        	
+        
+		
+		<div id="view">
+			<img id="photo18" src="img/图层 18 副本.png" />
+			
+				<h3>盐湖风光</h3>
+				<p>SALINE LAKE SCENERY</p>
+			
+			<div id="longphoto">
+				<img src="img/1451586450.jpg" />
+				<img src="img/1451587925.jpg" />
+				<img src="img/1448682693.jpg"/>
+				 <img src="img/1448678784.jpg"/>
+				
+				 
+			</div>
+			
+			
+				
+			
+			
+			<div>
+				<img id="left" src="img/mfrl.png"/>
+				<img id="right" src="img/mfrl 副本 3.png" />
+			</div>
+			<div id="chakangengduo">
+				查看更多<b>></b>
+			</div>
+		</div>
+		
+	
+		
+		
+		
+		
+		
+		<div class="news" >
+		<img id="photo181" src="img/图层 18 副本.png" />
+			<h2>新闻中心</h2>
+		<h5>NEWS</h5>
+    		<h3> &nbsp;</h3>
+        <p> &nbsp;</p>
+	<div class="box_title news_t">
+	
+        <span></span>
+    </div>
+    
+    <div class="news_c">
+    	<div class="news_c_left ">
+    		
+        	<div class="left">
+            	<img src="img/news_l_img.png">
+                <h3>新闻 & 动态</h3>
+                <div id="xinwen"  class="btn xinwen active" onclick="onMousemove()">
+                	<i></i>
+                	<!--<img src="img/iconfont-xinwen.png"/> -->
+                    <p>公司新闻<span>news</span></p>
+                </div>
+                
+                <div id="dongtai"  class="btn dongtai " onclick="onMousemove1()">
+                	<i></i>
+                    <p>行业动态<span>Dynamic</span></p>
+                </div>
+            </div>
+            
+            
+            <div id="a" class="right">
+            	<ul>
+                	<li class="xw">
+                    
+                    	                    	<div class="toutiao">
+                        	<h4>青海高端盐湖科技有限公司董事长视察工地及水源地</h4>
+                            <p>青海高端盐湖科技有限公司董事长视察工地及水源地，了解生产情况就安全生产现场作出重要指示。会...<a href="newsshow.php?cid=18&id=27">[详情]</a></p>
+                        </div>
+                                                
+                        
+                        <div class="list">
+                                                	<a href="newsshow.php?cid=18&id=27"><span>03-29</span>青海高端盐湖科技有限公司董事长视察工地及水源...</a>
+                                              	<a href="newsshow.php?cid=19&id=26"><span>11-28</span>热烈庆祝腾飞葡萄专业合作社施用“辉田”牌硫酸...</a>
+                                              	<a href="newsshow.php?cid=19&id=25"><span>11-28</span>西南地区丰收的季节</a>
+                                              </div>
+                        
+                        <a href="news.php?cid=18" class="more">查看更多    &nbsp;&nbsp;&nbsp;></a>
+                    
+                    </li>
+                    
+                    
+                    
+                    <li class="dt">
+                                        
+                    	<div class="toutiao">
+                        	<h4>氨基酸多肽高塔复肥在东莞大众批量下线</h4>
+                            <p>据介绍，该肥料的显著的特点是：不但能节肥20%、增产15%左右，而且能改善作物品质。氨基酸多肽...<a href="newsshow.php?cid=19&id=24">[详情]</a></p>
+                        </div>
+                                          
+                        <div class="list">
+                                                	<a href="newsshow.php?cid=18&id=27"><span>03-29</span>青海高端盐湖科技有限公司董事长视察工地及水源...</a>
+                                                    	<a href="newsshow.php?cid=19&id=26"><span>11-28</span>热烈庆祝腾飞葡萄专业合作社施用“辉田”牌硫酸...</a>
+                                                    	<a href="newsshow.php?cid=19&id=25"><span>11-28</span>西南地区丰收的季节</a>
+                                                    </div>
+                        
+                        <a href="news.php?cid=19" class="more">查看更多    &nbsp;&nbsp;&nbsp;></a>
+                    
+                    </li>
+                    
+                </ul>
+            </div>        
+        </div>
+        
+        
+        
+        <div class="news_c_right float_r">
+        	<div class="shipin">
+            	<img src="img/shipin.jpg">
+            </div>
+            <div class="tex">公司宣传片<span>Trailer</span></div>
+        </div>
+        
+        
+      
+        
+  </div>
+    
+    
+</div>
+		<!-- 新闻中心源代码
+        <div id="news">
+			<img id="photo181" src="img/图层 18 副本.png" />
+			<h3>新闻中心</h3>
+			<p>NEWS</p>
+		
+	
+			<div  id="xinwendongtai">
+				<img src="img/news_l_img.png" />
+				<h5>新闻&动态</h5>
+				<div id="gongsixinwen">
+					<img src="img/iconfont-xinwen.png" />
+					<h5 id="new" style="display: block;">
+						公司新闻
+					<span>NEWS</span>
+						
+					</h5>
+					
+				</div>
+				
+				<div id="hangyedongtai">
+					<img src="img/iconfont-xinwen.png" />
+					
+                    	<h5 id="dongtai">
+						行业动态
+					<span>DYNAMIC</span>
+					</h5>
+                    
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			
+			<div id="xinwenxinxi">
+				
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			<div id="xuanchuanpian">
+				
+				
+			</div>
+		
+		</div>
+        -->
+		
+		
+		
+		
+		
+		<!--
+        	<div class="fotter">
+			<div class="ft_top">
+				<img src="img/ft_logo.png" class="ft_logo">
+				<div class="ft_tex">
+					<h1>青海高端盐湖科技有限公司</h1>
+					<p>
+						"公司地址：青海省格尔木市柴达木西路14号"
+						<br />
+						"Email:qhgdyh@126.com"
+						<br />
+						"传真：0979-8467858  邮编：816000“
+					</p>
+					<div class="ft_tel">0979-8463599</div>
+						
+					
+				</div>
+				<img class="ft_ewm" src="img/erweima.png"/>
+			</div>
+			<div  class="ft_btm">
+				<div  class="link">
+					"友情链接"
+					<span>^</span>
+					<ul>
+						<li>
+							<a target="_blank" href="#">济南大地美术</a>
+						</li>
+						<li>
+							<a target="_blank" href="#" >白鹤拳酒厂</a>
+						</li>
+						<li>
+							<a target="_blank" href="#">青年帮创意工坊</a>
+						</li>
+					</ul>
+				</div>
+				<div class="copy">青海高端盐互科技有限公司&nbsp;&nbsp;&nbsp;  青ICP备05001178号</div>
+			</div>
+		</div>
+        -->
+		
+		
+		<div  class="footer">
+	<div class="ft_top">
+    	<img src="img/ft_logo.png" class="ft_logo">
+        <div class="ft_tex">
+        	<h1>青海高端盐湖科技有限公司</h1>
+            <p>公司地址：青海省格尔木市柴达木西路14号<br/>Email：qhgdyh@126.com<br/>传真：0979-8467858    邮编：816000</p>
+            <div class="ft_tel">0979-8463599</div>
+        </div>
+        
+        <img src="img/erweima.png" class="ft_ewm" />
+    </div>
+    
+    
+    
+    <div class="ft_btm">
+    	<div class="link">
+        	友情链接<span>∧</span>
+            <ul>
+            	                <li><a target="_blank" href="http://www.dadimeishu.cn/">济南大地美术</a></li>
+                                <li><a target="_blank" href="http://www.hbq9.cn/">白鹤泉酒厂</a></li>
+                                <li><a target="_blank" href="http://www.qingnian8.com">青年帮创意工坊</a></li>
+                            </ul>
+        </div>
+        
+        
+        <div class="copy">青海高端盐湖科技有限公司&nbsp;&nbsp;&nbsp;   青ICP备05001178号</div>
+    </div>
+</div>
+		
+		
+		<!--
+        	<div class="video">
+			<div class="close">X</div>
+		</div>
+		<div class="video_bg">
+			
+		</div>
+        -->
+	</body>
+</html>
